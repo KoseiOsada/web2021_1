@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>最大表示数の入力</title>
+</head>
+<body>
+  <h2>人口の少ない順で表示（最大表示数指定）</h2>
+  <form action="/top2" method="get">
+    <label for="max">表示する件数：</label>
+    <input type="number" id="max" name="max" min="1" required>
+    <input type="submit" value="送信">
+  </form>
+</body>
+</html>
