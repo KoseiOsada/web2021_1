@@ -1,1 +1,0 @@
-select 都道府県,男子学生,女子学生 from example where 男子学生 < 女子学生;
