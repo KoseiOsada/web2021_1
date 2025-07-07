@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>バイク詳細</title>
+</head>
+<body>
+  <h2><%= data.name %>（ID: <%= data.id %>）の詳細</h2>
+  <table border="1">
+    <tr><td>バイク名</td><td><%= data.name %></td></tr>
+    <tr><td>メーカー</td><td><%= data.maker_name %></td></tr>
+    <tr><td>生産国</td><td><%= data.生産国 %></td></tr>
+    <tr><td>発表日</td><td><%= data.発表日 %></td></tr>
+    <tr><td>値段</td><td><%= data.値段 %> 円</td></tr>
+  </table>
+  <br>
+  <a href="/bikes">← バイク一覧へ戻る</a>
+</body>
+</html>

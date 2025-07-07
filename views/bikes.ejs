@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>バイク一覧</title>
+</head>
+<body>
+  <h2>バイク一覧</h2>
+  <table border="1">
+    <tr>
+      <th>ID</th>
+      <th>バイク名</th>
+      <th>メーカー</th>
+      <th>生産国</th>
+      <th>発表日</th>
+      <th>値段</th>
+    </tr>
+    <% for (let row of data) { %>
+      <tr>
+        <td><a href="/bike/<%= row.id %>"><%= row.id %></a></td>
+        <td><a href="/bike/<%= row.id %>"><%= row.bike_name %></a></td>
+        <td><%= row.maker_name %></td>
+        <td><%= row.生産国 %></td>
+        <td><%= row.発表日 %></td>
+        <td><%= row.値段 %></td>
+      </tr>
+    <% } %>
+  </table>
+</body>
+</html>

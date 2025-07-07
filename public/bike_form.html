@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>バイク登録フォーム</title>
+</head>
+<body>
+  <h2>バイクを追加</h2>
+  <form action="/insert-bike" method="post">
+    <label>バイク名: <input type="text" name="name" required></label><br>
+    <label>生産国: <input type="text" name="生産国" required></label><br>
+    <label>発表日 (例: 2024-05-01): <input type="text" name="発表日" required></label><br>
+    <label>値段: <input type="number" name="値段" required></label><br>
+    <label>メーカーID: <input type="number" name="maker_id" required></label><br>
+    <input type="submit" value="登録">
+  </form>
+</body>
+</html>
